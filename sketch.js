@@ -14,7 +14,7 @@ function preload(){
   eat = loadAnimation("eat1.png", "eat2.png");
   working = loadAnimation("gym1.png", "gym2.png");
   gym2 = loadAnimation("gym11.png", "gym12.png");
-  move = loadAnimation("move.png", "move1.png");
+  move = loadAnimation("move1.png", "move2.png");
   sleep = loadAnimation("sleep.png")
   brush = loadAnimation("brush.png");
 
@@ -78,12 +78,11 @@ function draw() {
     astronaut,velocityY = 0;
   }
   
-  if(keyDown("M_KEY")){
+  if(keyDown("m")){
     astronaut.addAnimation("moving", move);
-    astronaut.changeAnimation("moving")
-    astronaut.y = 350;
+    astronaut.changeAnimation("moving");
     astronaut.velocityX = 2;
-    astronaut,velocityY = 3;
+    astronaut.velocityY = 3;
   }
 
 
